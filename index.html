@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ninja Sushi</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/style.css">
-  <title>Ninja Sushi</title>
 </head>
 <body>
   <div class="wrapper">
@@ -74,16 +75,16 @@
                   <img src="images/header/bell.svg" alt="bell">
                 </button>
               </li>
-              <li class="buttons__item">
+              <li class="buttons__item liked-item">
                 <button class="buttons__link">
-                  <img src="images/header/liked.svg" alt="user profile">
+                  <img src="images/header/liked.svg" alt="liked goods">
                 </button>
               </li>
               <li class="buttons__item profile">
                 <button class="buttons__link">
                   <img src="images/header/profile.svg" alt="user profile">
                 </button>
-              <li class="buttons__item">
+              <li class="buttons__item shopping-cart">
                 <button class="buttons__link buttons__link_large">
                   <span class="buttons__text">Корзина</span>
                   <img src="images/header/shopping-cart.svg" alt="shopping cart">
@@ -107,63 +108,741 @@
     </header>
     <!-- /.header -->
     <main class="main">
-      <div class="main__container _continer">
-        <div class="main__body-novigation">
-          <nav class="main__navigation navigation">
-            <ul class="navigation__list">
-              <li class="navigation__item first-item">
-                <a href="#" class="navigation__link">
-                  <img src="images/main-main/navigation/Rolls.svg" alt="" class="navigation__icon">
-                  <span class="navigation__text">Роллы</span>
-                </a>
-              </li>
-            </ul>
-            <ul class="navigation__list">
-              <li class="navigation__item">
-                <a href="#" class="navigation__link">
-                  <img src="images/main-main/navigation/Sushi.svg" alt="Rolls" class="navigation__icon">
-                  <span class="navigation__text">Суши</span>
-                </a>
-              </li>
-            </ul>
-            <ul class="navigation__list">
-              <li class="navigation__item">
-                <a href="#" class="navigation__link">
-                  <img src="images/main-main/navigation/Sets.svg" alt="Sets" class="navigation__icon">
-                  <span class="navigation__text">Сеты</span>
-                </a>
-              </li>
-            </ul>
-            <ul class="navigation__list">
-              <li class="navigation__item">
-                <a href="#" class="navigation__link">
-                  <img src="images/main-main/navigation/Boyls.svg" alt="Boyls" class="navigation__icon">
-                  <span class="navigation__text">Боулы</span>
-                </a>
-              </li>
-            </ul>
-            <ul class="navigation__list">
-              <li class="navigation__item">
-                <a href="#" class="navigation__link">
-                  <img src="images/main-main/navigation/Drinks.svg" alt="Drinks" class="navigation__icon">
-                  <span class="navigation__text">Напитки</span>
-                </a>
-              </li>
-            </ul>
-            <ul class="navigation__list">
-              <li class="navigation__item">
-                <a href="#" class="navigation__link">
-                  <img src="images/main-main/navigation/Sauses.svg" alt="Sauses" class="navigation__icon">
-                  <span class="navigation__text">Соусы</span>
-                </a>
-              </li>
-            </ul>
-          </nav>
-          <!-- /.main__navigation -->
+      <div class="main__main-navigation main-navigation">
+        <div class="main-navigation__container _continer">
+          <div class="main-navigation__body">
+            <nav class="main-navigation__navigation navigation">
+              <ul class="navigation__list">
+                <li class="navigation__item first-item">
+                  <a href="#" class="navigation__link">
+                    <img src="images/main-main/navigation/Rolls.svg" alt="" class="navigation__icon">
+                    <span class="navigation__text">Роллы</span>
+                  </a>
+                </li>
+                <li class="navigation__item">
+                  <a href="#" class="navigation__link">
+                    <img src="images/main-main/navigation/Sushi.svg" alt="Rolls" class="navigation__icon">
+                    <span class="navigation__text">Суши</span>
+                  </a>
+                </li>
+                <li class="navigation__item">
+                  <a href="#" class="navigation__link">
+                    <img src="images/main-main/navigation/Sets.svg" alt="Sets" class="navigation__icon">
+                    <span class="navigation__text">Сеты</span>
+                  </a>
+                </li>
+                <li class="navigation__item">
+                  <a href="#" class="navigation__link">
+                    <img src="images/main-main/navigation/Boyls.svg" alt="Boyls" class="navigation__icon">
+                    <span class="navigation__text">Боулы</span>
+                  </a>
+                </li>
+                <li class="navigation__item">
+                  <a href="#" class="navigation__link">
+                    <img src="images/main-main/navigation/Drinks.svg" alt="Drinks" class="navigation__icon">
+                    <span class="navigation__text">Напитки</span>
+                  </a>
+                </li>
+                <li class="navigation__item">
+                  <a href="#" class="navigation__link">
+                    <img src="images/main-main/navigation/Sauses.svg" alt="Sauses" class="navigation__icon">
+                    <span class="navigation__text">Соусы</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <!-- /.main__navigation -->
+          </div>
+          <!-- /.main__body -->
         </div>
-        <!-- /.main__body -->
+        <!-- /.main__container -->
       </div>
-      <!-- /.main__container -->
+      <!-- /.main__main-navigatiom -->
+      <section class="main__main-slider main-slider">
+        <div class="main-slider__container _continer">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img class="bg-img" src="images/main-main/main-slider/mikasa.jpg" alt="mikasa">
+                <img class="bg-mb-img" src="images/main-main/main-slider/mb-mikasa-w.jpg" alt="warszawa">
+                <div class="main-slider__info slider-info">
+                  <h1 class="slider-info__heading">Ninja Sushi в Warszawa!</h1>
+                  <p class="slider-info__text">Доставку делаем с 10:00 до 19:30</p>
+                  <a href="#" class="slider-info__link">Перейти к новости</a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img class="bg-img" src="images/main-main/main-slider/warszawa.webp" alt="warszawa">
+                <img class="bg-mb-img" src="images/main-main/main-slider/mb-warszawa.webp" alt="warszawa">
+                <div class="main-slider__info slider-info">
+                  <h1 class="slider-info__heading">Ninja Sushi в Warszawa!</h1>
+                  <p class="slider-info__text">Доставку делаем с 10:00 до 19:30</p>
+                  <a href="#" class="slider-info__link">Перейти к новости</a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img class="bg-img" src="images/main-main/main-slider/dragon.webp" alt="dragon">
+                <img class="bg-mb-img" src="images/main-main/main-slider/mb-dragon.webp" alt="warszawa">
+                <div class="main-slider__info slider-info">
+                  <h1 class="slider-info__heading">Ninja Sushi в Киеве! Пока только на левом берегу</h1>
+                  <p class="slider-info__text">Доставку делаем с 10:00 до 19:30</p>
+                  <a href="#" class="slider-info__link">Перейти к новости</a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img class="bg-img" src="images/main-main/main-slider/soldier.webp" alt="">
+                <img class="bg-mb-img" src="images/main-main/main-slider/mb-soldier.webp" alt="warszawa">
+                <div class="main-slider__info slider-info">
+                  <h1 class="slider-info__heading">Ninja Sushi в Киеве! Пока только на левом берегу</h1>
+                  <p class="slider-info__text">Доставку делаем с 10:00 до 19:30</p>
+                  <a href="#" class="slider-info__link">Перейти к новости</a>
+                </div>
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <!-- /.main__main-slider -->
+      <section class="main__main-sushi main-sushi">
+        <div class="main-sushi__container _continer">
+          <div class="main-sushi__header">
+            <h2 class="main-sushi__title">Суши</h2>
+            <a href="#" class="main-sushi__more">Смотреть все</a>
+          </div>
+          <!-- /.main-sushi__header -->
+          <div class="main-sushi__main-content main-content">
+            <article class="main-card">
+              <div class="main-card__container">
+                <div class="main-card__link">
+                  <a href="#" class="main-card__image image-card">
+                    <img class="image-card__image" src="images/main-main/main-sushi/gunkan-salmon.png" alt="gunkan salmon">
+                  </a>
+                </div>
+                <h4 class="main-card__title">
+                  <a href="#" class="main-card__link-title">Гункан лосось</a>
+                </h4>
+                <div class="main-card__info info-card">
+                  <div class="info-card__weight">Вес: 40 г</div>
+                  <div class="info-card__description">
+                    Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло
+                  </div>
+                </div>
+              </div>
+              <div class="main-card__footer">
+                <div class="main-card__price">190 <span class="price__currency">грн</span></div>
+                <a href="#" class="main-card__like"><img src="images/main-main/main-sushi/icons/like-sushi.svg" alt=""></a>
+                <button class="main-card__add"><img src="images/main-main/main-sushi/icons/add-to-cart.svg"></button>
+              </div>
+            </article>
+            <article class="main-card">
+              <div class="main-card__container">
+                <div class="main-card__link">
+                  <a href="#" class="main-card__image image-card">
+                    <img class="image-card__image" src="images/main-main/main-sushi/gunkan-shrimp.png" alt="gunkan shrimp">
+                  </a>
+                </div>
+                <h4 class="main-card__title">
+                  <a href="#" class="main-card__link-title">Гункан лосось</a>
+                </h4>
+                <div class="main-card__info info-card">
+                  <div class="info-card__weight">Вес: 40 г</div>
+                  <div class="info-card__description">
+                    Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло
+                  </div>
+                </div>
+              </div>
+              <div class="main-card__footer">
+                <div class="main-card__price">190 <span class="price__currency">грн</span></div>
+                <a href="#" class="main-card__like"><img src="images/main-main/main-sushi/icons/like-sushi.svg" alt=""></a>
+                <button class="main-card__add"><img src="images/main-main/main-sushi/icons/add-to-cart.svg"></button>
+              </div>
+            </article>
+            <article class="main-card">
+              <div class="main-card__container">
+                <div class="main-card__link">
+                  <a href="#" class="main-card__image image-card">
+                    <img class="image-card__image" src="images/main-main/main-sushi/nigiri-the-eel.png" alt="nigiri">
+                  </a>
+                </div>
+                <h4 class="main-card__title">
+                  <a href="#" class="main-card__link-title">Нигири угорь</a>
+                </h4>
+                <div class="main-card__info info-card">
+                  <div class="info-card__weight">Вес: 40 г</div>
+                  <div class="info-card__description">
+                    Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло
+                  </div>
+                </div>
+              </div>
+              <div class="main-card__footer">
+                <div class="main-card__price">190 <span class="price__currency">грн</span></div>
+                <a href="#" class="main-card__like"><img src="images/main-main/main-sushi/icons/like-sushi.svg" alt=""></a>
+                <button class="main-card__add"><img src="images/main-main/main-sushi/icons/add-to-cart.svg"></button>
+              </div>
+              <!-- <div class="main-card__body">
+                            <div class="main-card__footer">
+                              <div class="main-card__price">190 <span class="price__currency">грн</span></div>
+                              <a href="#" class="main-card__like"><img src="images/main-main/main-sushi/icons/like-sushi.svg" alt=""></a>
+                              <button class="main-card__add"><img src="images/main-main/main-sushi/icons/add-to-cart.svg"></button>
+                            </div>
+                          </div> -->
+            </article>
+            <article class="main-card">
+              <div class="main-card__container">
+                <div class="main-card__link">
+                  <a href="#" class="main-card__image image-card">
+                    <img class="image-card__image" src="images/main-main/main-sushi/nigiri-shrimp.png" alt="gunkan salmon">
+                  </a>
+                </div>
+                <h4 class="main-card__title">
+                  <a href="#" class="main-card__link-title">Нигири угорь</a>
+                </h4>
+                <div class="main-card__info info-card">
+                  <div class="info-card__weight">Вес: 40 г</div>
+                  <div class="info-card__description">
+                    Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло
+                  </div>
+                </div>
+              </div>
+              <div class="main-card__footer">
+                <div class="main-card__price">190 <span class="price__currency">грн</span></div>
+                <a href="#" class="main-card__like"><img src="images/main-main/main-sushi/icons/like-sushi.svg" alt=""></a>
+                <button class="main-card__add"><img src="images/main-main/main-sushi/icons/add-to-cart.svg"></button>
+              </div>
+              <!-- <div class="main-card__body">
+                            <div class="main-card__footer">
+                              <div class="main-card__price">190 <span class="price__currency">грн</span></div>
+                              <a href="#" class="main-card__like"><img src="images/main-main/main-sushi/icons/like-sushi.svg" alt=""></a>
+                              <button class="main-card__add"><img src="images/main-main/main-sushi/icons/add-to-cart.svg"></button>
+                            </div>
+                          </div> -->
+            </article>
+            <article class="main-card">
+              <div class="main-card__container">
+                <div class="main-card__link">
+                  <a href="#" class="main-card__image image-card">
+                    <img class="image-card__image" src="images/main-main/main-sushi/gunkan-herrir.png" alt="gunkan tuna">
+                  </a>
+                </div>
+                <h4 class="main-card__title">
+                  <a href="#" class="main-card__link-title">Гункан с тунцом и трюфелем</a>
+                </h4>
+                <div class="main-card__info info-card">
+                  <div class="info-card__weight">Вес: 40 г</div>
+                  <div class="info-card__description">
+                    Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло
+                  </div>
+                </div>
+              </div>
+              <div class="main-card__footer">
+                <div class="main-card__price">190 <span class="price__currency">грн</span></div>
+                <a href="#" class="main-card__like"><img src="images/main-main/main-sushi/icons/like-sushi.svg" alt=""></a>
+                <button class="main-card__add"><img src="images/main-main/main-sushi/icons/add-to-cart.svg"></button>
+              </div>
+              <!-- <div class="main-card__body">
+                            <div class="main-card__footer">
+                              <div class="main-card__price">190 <span class="price__currency">грн</span></div>
+                              <a href="#" class="main-card__like"><img src="images/main-main/main-sushi/icons/like-sushi.svg" alt=""></a>
+                              <button class="main-card__add"><img src="images/main-main/main-sushi/icons/add-to-cart.svg"></button>
+                            </div>
+                          </div> -->
+            </article>
+            <article class="main-card">
+              <div class="main-card__container">
+                <div class="main-card__link">
+                  <a href="#" class="main-card__image image-card">
+                    <img class="image-card__image" src="images/main-main/main-sushi/gunkan-tuna.png" alt="gunkan salmon">
+                  </a>
+                </div>
+                <h4 class="main-card__title">
+                  <a href="#" class="main-card__link-title">Гункан тунец спайси</a>
+                </h4>
+                <div class="main-card__info info-card">
+                  <div class="info-card__weight">Вес: 40 г</div>
+                  <div class="info-card__description">
+                    Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло
+                  </div>
+                </div>
+              </div>
+              <div class="main-card__footer">
+                <div class="main-card__price">190 <span class="price__currency">грн</span></div>
+                <a href="#" class="main-card__like"><img src="images/main-main/main-sushi/icons/like-sushi.svg" alt=""></a>
+                <button class="main-card__add"><img src="images/main-main/main-sushi/icons/add-to-cart.svg"></button>
+              </div>
+              <!-- <div class="main-card__body">
+                                        <div class="main-card__footer">
+                                          <div class="main-card__price">190 <span class="price__currency">грн</span></div>
+                                          <a href="#" class="main-card__like"><img src="images/main-main/main-sushi/icons/like-sushi.svg" alt=""></a>
+                                          <button class="main-card__add"><img src="images/main-main/main-sushi/icons/add-to-cart.svg"></button>
+                                        </div>
+                                      </div> -->
+            </article>
+            <article class="main-card">
+              <div class="main-card__container">
+                <div class="main-card__link">
+                  <a href="#" class="main-card__image image-card">
+                    <img class="image-card__image" src="images/main-main/main-sushi/gunkan-the-eel.png" alt="gunkan salmon">
+                  </a>
+                </div>
+                <h4 class="main-card__title">
+                  <a href="#" class="main-card__link-title">Гункан угорь</a>
+                </h4>
+                <div class="main-card__info info-card">
+                  <div class="info-card__weight">Вес: 40 г</div>
+                  <div class="info-card__description">
+                    Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло
+                  </div>
+                </div>
+              </div>
+              <div class="main-card__footer">
+                <div class="main-card__price">190 <span class="price__currency">грн</span></div>
+                <a href="#" class="main-card__like"><img src="images/main-main/main-sushi/icons/like-sushi.svg" alt=""></a>
+                <button class="main-card__add"><img src="images/main-main/main-sushi/icons/add-to-cart.svg"></button>
+              </div>
+              <!-- <div class="main-card__body">
+                                        <div class="main-card__footer">
+                                          <div class="main-card__price">190 <span class="price__currency">грн</span></div>
+                                          <a href="#" class="main-card__like"><img src="images/main-main/main-sushi/icons/like-sushi.svg" alt=""></a>
+                                          <button class="main-card__add"><img src="images/main-main/main-sushi/icons/add-to-cart.svg"></button>
+                                        </div>
+                                      </div> -->
+            </article>
+            <article class="main-card">
+              <div class="main-card__container">
+                <div class="main-card__link">
+                  <a href="#" class="main-card__image image-card">
+                    <img class="image-card__image" src="images/main-main/main-sushi/nigiri-tuna.png" alt="gunkan salmon">
+                  </a>
+                </div>
+                <h4 class="main-card__title">
+                  <a href="#" class="main-card__link-title">Нигири тунец</a>
+                </h4>
+                <div class="main-card__info info-card">
+                  <div class="info-card__weight">Вес: 40 г</div>
+                  <div class="info-card__description">
+                    Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло
+                  </div>
+                </div>
+              </div>
+              <div class="main-card__footer">
+                <div class="main-card__price">190 <span class="price__currency">грн</span></div>
+                <a href="#" class="main-card__like"><img src="images/main-main/main-sushi/icons/like-sushi.svg" alt=""></a>
+                <button class="main-card__add"><img src="images/main-main/main-sushi/icons/add-to-cart.svg"></button>
+              </div>
+              <!-- <div class="main-card__body">
+                                        <div class="main-card__footer">
+                                          <div class="main-card__price">190 <span class="price__currency">грн</span></div>
+                                          <a href="#" class="main-card__like"><img src="images/main-main/main-sushi/icons/like-sushi.svg" alt=""></a>
+                                          <button class="main-card__add"><img src="images/main-main/main-sushi/icons/add-to-cart.svg"></button>
+                                        </div>
+                                      </div> -->
+            </article>
+          </div>
+        </div>
+        <!-- /.main-sushi__container -->
+      </section>
+      <!-- /.main__main-sushi -->
+      <section class="main__main-rolls main-sushi">
+        <div class="main-sushi__container _continer">
+          <div class="main-sushi__header">
+            <h2 class="main-sushi__title">Роллы</h2>
+            <a href="#" class="main-sushi__more">Смотреть все</a>
+          </div>
+          <!-- /.main-sushi__header -->
+          <div class="main-sushi__main-content main-content">
+            <article class="main-card">
+              <div class="main-card__container">
+                <div class="main-card__link">
+                  <a href="#" class="main-card__image image-card">
+                    <img class="image-card__image" src="images/main-main/main-rolls/philadelphia-with-salmon.png" alt="gunkan salmon">
+                  </a>
+                </div>
+                <h4 class="main-card__title">
+                  <a href="#" class="main-card__link-title">Филадельфия с лососем</a>
+                </h4>
+                <div class="main-card__info info-card">
+                  <div class="info-card__weight">Вес: 40 г</div>
+                  <div class="info-card__description">
+                    Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло
+                  </div>
+                </div>
+              </div>
+              <div class="main-card__footer">
+                <div class="main-card__price">190 <span class="price__currency">грн</span></div>
+                <a href="#" class="main-card__like"><img src="images/main-main/main-sushi/icons/like-sushi.svg" alt=""></a>
+                <button class="main-card__add"><img src="images/main-main/main-sushi/icons/add-to-cart.svg"></button>
+              </div>
+            </article>
+            <article class="main-card">
+              <div class="main-card__container">
+                <div class="main-card__link">
+                  <a href="#" class="main-card__image image-card">
+                    <img class="image-card__image" src="images/main-main/main-rolls/philadelphia-the-eel.png" alt="gunkan shrimp">
+                  </a>
+                </div>
+                <h4 class="main-card__title">
+                  <a href="#" class="main-card__link-title">Филадельфия с угрем</a>
+                </h4>
+                <div class="main-card__info info-card">
+                  <div class="info-card__weight">Вес: 40 г</div>
+                  <div class="info-card__description">
+                    Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло
+                  </div>
+                </div>
+              </div>
+              <div class="main-card__footer">
+                <div class="main-card__price">190 <span class="price__currency">грн</span></div>
+                <a href="#" class="main-card__like"><img src="images/main-main/main-sushi/icons/like-sushi.svg" alt=""></a>
+                <button class="main-card__add"><img src="images/main-main/main-sushi/icons/add-to-cart.svg"></button>
+              </div>
+            </article>
+            <article class="main-card">
+              <div class="main-card__container">
+                <div class="main-card__link">
+                  <a href="#" class="main-card__image image-card">
+                    <img class="image-card__image" src="images/main-main/main-rolls/cratos.png" alt="nigiri">
+                  </a>
+                </div>
+                <h4 class="main-card__title">
+                  <a href="#" class="main-card__link-title">Кратос</a>
+                </h4>
+                <div class="main-card__info info-card">
+                  <div class="info-card__weight">Вес: 40 г</div>
+                  <div class="info-card__description">
+                    Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло
+                  </div>
+                </div>
+              </div>
+              <div class="main-card__footer">
+                <div class="main-card__price">190 <span class="price__currency">грн</span></div>
+                <a href="#" class="main-card__like"><img src="images/main-main/main-sushi/icons/like-sushi.svg" alt=""></a>
+                <button class="main-card__add"><img src="images/main-main/main-sushi/icons/add-to-cart.svg"></button>
+              </div>
+            </article>
+            <article class="main-card">
+              <div class="main-card__container">
+                <div class="main-card__link">
+                  <a href="#" class="main-card__image image-card">
+                    <img class="image-card__image" src="images/main-main/main-rolls/yamomoto.png" alt="gunkan salmon">
+                  </a>
+                </div>
+                <h4 class="main-card__title">
+                  <a href="#" class="main-card__link-title">Ямамото</a>
+                </h4>
+                <div class="main-card__info info-card">
+                  <div class="info-card__weight">Вес: 40 г</div>
+                  <div class="info-card__description">
+                    Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло
+                  </div>
+                </div>
+              </div>
+              <div class="main-card__footer">
+                <div class="main-card__price">190 <span class="price__currency">грн</span></div>
+                <a href="#" class="main-card__like"><img src="images/main-main/main-sushi/icons/like-sushi.svg" alt=""></a>
+                <button class="main-card__add"><img src="images/main-main/main-sushi/icons/add-to-cart.svg"></button>
+              </div>
+            </article>
+            <article class="main-card">
+              <div class="main-card__container">
+                <div class="main-card__link">
+                  <a href="#" class="main-card__image image-card">
+                    <img class="image-card__image" src="images/main-main/main-rolls/baked-shrimp.png" alt="gunkan tuna">
+                  </a>
+                </div>
+                <h4 class="main-card__title">
+                  <a href="#" class="main-card__link-title">Запеченная креветка</a>
+                </h4>
+                <div class="main-card__info info-card">
+                  <div class="info-card__weight">Вес: 40 г</div>
+                  <div class="info-card__description">
+                    Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло
+                  </div>
+                </div>
+              </div>
+              <div class="main-card__footer">
+                <div class="main-card__price">190 <span class="price__currency">грн</span></div>
+                <a href="#" class="main-card__like"><img src="images/main-main/main-sushi/icons/like-sushi.svg" alt=""></a>
+                <button class="main-card__add"><img src="images/main-main/main-sushi/icons/add-to-cart.svg"></button>
+              </div>
+            </article>
+            <article class="main-card">
+              <div class="main-card__container">
+                <div class="main-card__link">
+                  <a href="#" class="main-card__image image-card">
+                    <img class="image-card__image" src="images/main-main/main-rolls/cheese-with-salmon.png" alt="gunkan salmon">
+                  </a>
+                </div>
+                <h4 class="main-card__title">
+                  <a href="#" class="main-card__link-title">Сырный с лососем</a>
+                </h4>
+                <div class="main-card__info info-card">
+                  <div class="info-card__weight">Вес: 40 г</div>
+                  <div class="info-card__description">
+                    Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло
+                  </div>
+                </div>
+              </div>
+              <div class="main-card__footer">
+                <div class="main-card__price">190 <span class="price__currency">грн</span></div>
+                <a href="#" class="main-card__like"><img src="images/main-main/main-sushi/icons/like-sushi.svg" alt=""></a>
+                <button class="main-card__add"><img src="images/main-main/main-sushi/icons/add-to-cart.svg"></button>
+              </div>
+            </article>
+            <article class="main-card">
+              <div class="main-card__container">
+                <div class="main-card__link">
+                  <a href="#" class="main-card__image image-card">
+                    <img class="image-card__image" src="images/main-main/main-rolls/mikasa.png" alt="gunkan salmon">
+                  </a>
+                </div>
+                <h4 class="main-card__title">
+                  <a href="#" class="main-card__link-title">Микаса</a>
+                </h4>
+                <div class="main-card__info info-card">
+                  <div class="info-card__weight">Вес: 40 г</div>
+                  <div class="info-card__description">
+                    Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло
+                  </div>
+                </div>
+              </div>
+              <div class="main-card__footer">
+                <div class="main-card__price">190 <span class="price__currency">грн</span></div>
+                <a href="#" class="main-card__like"><img src="images/main-main/main-sushi/icons/like-sushi.svg" alt=""></a>
+                <button class="main-card__add"><img src="images/main-main/main-sushi/icons/add-to-cart.svg"></button>
+              </div>
+            </article>
+            <article class="main-card">
+              <div class="main-card__container">
+                <div class="main-card__link">
+                  <a href="#" class="main-card__image image-card">
+                    <img class="image-card__image" src="images/main-main/main-rolls/combo-philadelphia.png" alt="gunkan salmon">
+                  </a>
+                </div>
+                <h4 class="main-card__title">
+                  <a href="#" class="main-card__link-title">Комбо Филадельфия</a>
+                </h4>
+                <div class="main-card__info info-card">
+                  <div class="info-card__weight">Вес: 40 г</div>
+                  <div class="info-card__description">
+                    Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло
+                  </div>
+                </div>
+              </div>
+              <div class="main-card__footer">
+                <div class="main-card__price">190 <span class="price__currency">грн</span></div>
+                <a href="#" class="main-card__like"><img src="images/main-main/main-sushi/icons/like-sushi.svg" alt=""></a>
+                <button class="main-card__add"><img src="images/main-main/main-sushi/icons/add-to-cart.svg"></button>
+              </div>
+            </article>
+          </div>
+        </div>
+        <!-- /.main-sushi__container -->
+      </section>
+      <!-- /.main__main-rolls -->
+      <section class="main__main-sets main-sushi">
+        <div class="main-sushi__container _continer">
+          <div class="main-sushi__header">
+            <h2 class="main-sushi__title">Сеты</h2>
+            <a href="#" class="main-sushi__more">Смотреть все</a>
+          </div>
+          <!-- /.main-sushi__header -->
+          <div class="main-sushi__main-content main-content">
+            <article class="main-card">
+              <div class="main-card__container">
+                <div class="main-card__link">
+                  <a href="#" class="main-card__image image-card">
+                    <img class="image-card__image" src="images/main-main/main-sets/set1.png"
+                      alt="gunkan salmon">
+                  </a>
+                </div>
+                <h4 class="main-card__title">
+                  <a href="#" class="main-card__link-title">Сет #1</a>
+                </h4>
+                <div class="main-card__info info-card">
+                  <div class="info-card__weight">Вес: 950 г</div>
+                  <div class="info-card__description">
+                    Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло
+                  </div>
+                </div>
+              </div>
+              <div class="main-card__footer">
+                <div class="main-card__price">190 <span class="price__currency">грн</span></div>
+                <a href="#" class="main-card__like"><img src="images/main-main/main-sushi/icons/like-sushi.svg" alt=""></a>
+                <button class="main-card__add"><img src="images/main-main/main-sushi/icons/add-to-cart.svg"></button>
+              </div>
+            </article>
+            <article class="main-card">
+              <div class="main-card__container">
+                <div class="main-card__link">
+                  <a href="#" class="main-card__image image-card">
+                    <img class="image-card__image" src="images/main-main/main-sets/set2.png"
+                      alt="gunkan shrimp">
+                  </a>
+                </div>
+                <h4 class="main-card__title">
+                  <a href="#" class="main-card__link-title">Сет #2</a>
+                </h4>
+                <div class="main-card__info info-card">
+                  <div class="info-card__weight">Вес: 895 г</div>
+                  <div class="info-card__description">
+                    Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло
+                  </div>
+                </div>
+              </div>
+              <div class="main-card__footer">
+                <div class="main-card__price">190 <span class="price__currency">грн</span></div>
+                <a href="#" class="main-card__like"><img src="images/main-main/main-sushi/icons/like-sushi.svg" alt=""></a>
+                <button class="main-card__add"><img src="images/main-main/main-sushi/icons/add-to-cart.svg"></button>
+              </div>
+            </article>
+            <article class="main-card">
+              <div class="main-card__container">
+                <div class="main-card__link">
+                  <a href="#" class="main-card__image image-card">
+                    <img class="image-card__image" src="images/main-main/main-sets/set3.png" alt="nigiri">
+                  </a>
+                </div>
+                <h4 class="main-card__title">
+                  <a href="#" class="main-card__link-title">Сет #3</a>
+                </h4>
+                <div class="main-card__info info-card">
+                  <div class="info-card__weight">Вес: 900 г</div>
+                  <div class="info-card__description">
+                    Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло
+                  </div>
+                </div>
+              </div>
+              <div class="main-card__footer">
+                <div class="main-card__price">190 <span class="price__currency">грн</span></div>
+                <a href="#" class="main-card__like"><img src="images/main-main/main-sushi/icons/like-sushi.svg" alt=""></a>
+                <button class="main-card__add"><img src="images/main-main/main-sushi/icons/add-to-cart.svg"></button>
+              </div>
+            </article>
+            <article class="main-card">
+              <div class="main-card__container">
+                <div class="main-card__link">
+                  <a href="#" class="main-card__image image-card">
+                    <img class="image-card__image" src="images/main-main/main-sets/set-osaka.png" alt="gunkan salmon">
+                  </a>
+                </div>
+                <h4 class="main-card__title">
+                  <a href="#" class="main-card__link-title">Сет Осака</a>
+                </h4>
+                <div class="main-card__info info-card">
+                  <div class="info-card__weight">Вес: 252 г</div>
+                  <div class="info-card__description">
+                    Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло
+                  </div>
+                </div>
+              </div>
+              <div class="main-card__footer">
+                <div class="main-card__price">190 <span class="price__currency">грн</span></div>
+                <a href="#" class="main-card__like"><img src="images/main-main/main-sushi/icons/like-sushi.svg" alt=""></a>
+                <button class="main-card__add"><img src="images/main-main/main-sushi/icons/add-to-cart.svg"></button>
+              </div>
+            </article>
+            <article class="main-card">
+              <div class="main-card__container">
+                <div class="main-card__link">
+                  <a href="#" class="main-card__image image-card">
+                    <img class="image-card__image" src="images/main-main/main-sets/sushi-salmon-set.png" alt="gunkan tuna">
+                  </a>
+                </div>
+                <h4 class="main-card__title">
+                  <a href="#" class="main-card__link-title">Суши лосось в нори</a>
+                </h4>
+                <div class="main-card__info info-card">
+                  <div class="info-card__weight">Вес: 1600 г</div>
+                  <div class="info-card__description">
+                    Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло
+                  </div>
+                </div>
+              </div>
+              <div class="main-card__footer">
+                <div class="main-card__price">190 <span class="price__currency">грн</span></div>
+                <a href="#" class="main-card__like"><img src="images/main-main/main-sushi/icons/like-sushi.svg" alt=""></a>
+                <button class="main-card__add"><img src="images/main-main/main-sushi/icons/add-to-cart.svg"></button>
+              </div>
+            </article>
+            <article class="main-card">
+              <div class="main-card__container">
+                <div class="main-card__link">
+                  <a href="#" class="main-card__image image-card">
+                    <img class="image-card__image" src="images/main-main/main-sets/set7.png"
+                      alt="gunkan salmon">
+                  </a>
+                </div>
+                <h4 class="main-card__title">
+                  <a href="#" class="main-card__link-title">Сет #7</a>
+                </h4>
+                <div class="main-card__info info-card">
+                  <div class="info-card__weight">Вес: 1400 г</div>
+                  <div class="info-card__description">
+                    Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло
+                  </div>
+                </div>
+              </div>
+              <div class="main-card__footer">
+                <div class="main-card__price">190 <span class="price__currency">грн</span></div>
+                <a href="#" class="main-card__like"><img src="images/main-main/main-sushi/icons/like-sushi.svg" alt=""></a>
+                <button class="main-card__add"><img src="images/main-main/main-sushi/icons/add-to-cart.svg"></button>
+              </div>
+            </article>
+            <article class="main-card">
+              <div class="main-card__container">
+                <div class="main-card__link">
+                  <a href="#" class="main-card__image image-card">
+                    <img class="image-card__image" src="images/main-main/main-sets/set8.png" alt="gunkan salmon">
+                  </a>
+                </div>
+                <h4 class="main-card__title">
+                  <a href="#" class="main-card__link-title">Сет #8</a>
+                </h4>
+                <div class="main-card__info info-card">
+                  <div class="info-card__weight">Вес: 1350 г</div>
+                  <div class="info-card__description">
+                    Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло
+                  </div>
+                </div>
+              </div>
+              <div class="main-card__footer">
+                <div class="main-card__price">190 <span class="price__currency">грн</span></div>
+                <a href="#" class="main-card__like"><img src="images/main-main/main-sushi/icons/like-sushi.svg" alt=""></a>
+                <button class="main-card__add"><img src="images/main-main/main-sushi/icons/add-to-cart.svg"></button>
+              </div>
+            </article>
+            <article class="main-card">
+              <div class="main-card__container">
+                <div class="main-card__link">
+                  <a href="#" class="main-card__image image-card">
+                    <img class="image-card__image" src="images/main-main/main-sets/gunkan-set.png"
+                      alt="gunkan salmon">
+                  </a>
+                </div>
+                <h4 class="main-card__title">
+                  <a href="#" class="main-card__link-title">Гункан Сет</a>
+                </h4>
+                <div class="main-card__info info-card">
+                  <div class="info-card__weight">Вес: 1400 г</div>
+                  <div class="info-card__description">
+                    Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло
+                  </div>
+                </div>
+              </div>
+              <div class="main-card__footer">
+                <div class="main-card__price">190 <span class="price__currency">грн</span></div>
+                <a href="#" class="main-card__like"><img src="images/main-main/main-sushi/icons/like-sushi.svg" alt=""></a>
+                <button class="main-card__add"><img src="images/main-main/main-sushi/icons/add-to-cart.svg"></button>
+              </div>
+            </article>
+          </div>
+        </div>
+        <!-- /.main-sushi__container -->
+      </section>
+      <!-- /.main__main-sets -->
     </main>
     <!-- /.main -->
     <footer class="footer">
@@ -310,6 +989,7 @@
     <!-- /.footer -->
   </div>
   <!-- /.wrapper -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>
