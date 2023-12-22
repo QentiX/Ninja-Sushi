@@ -657,21 +657,27 @@
   }
 }
 
+@media (max-width: 720px) {
+  .image-card__image {
+    width: 290px;
+  }
+}
+
 @media (max-width: 425px) {
   .image-card__image {
-    width: 300px;
+    width: 270px;
   }
 }
 
 @media (max-width: 375px) {
   .image-card__image {
-    width: 280px;
+    width: 240px;
   }
 }
 
 @media (max-width: 340px) {
   .image-card__image {
-      width: 260px;
+      width: 230px;
   }
 }
 
@@ -788,7 +794,13 @@
 
 @media (max-width: 720px) {
   .main-card {
-    min-height: 520px;
+    min-height: 460px;
+  }
+}
+
+@media (max-width: 425px) {
+  .main-card {
+    min-height: 440px;
   }
 }
 
@@ -796,11 +808,14 @@
   .main-card {
     padding: 20px;
   }
+  .main-card {
+    min-height: 420px;
+  }
 }
 
 @media (max-width: 320px) {
   .main-card {
-    min-height: 500px;
+    min-height: 410px;
   }
 }
 
