@@ -1,4 +1,8 @@
 /* -----HEADER--------------------------------------------------- */
+/* .header{
+  position: sticky;
+  top: 0;
+} */
 
 .header__body{
   display: flex;
@@ -65,6 +69,14 @@
 .menu__list,
 .buttons__list{
   list-style: none;
+}
+
+.menu__link{
+  transition: .3s;
+}
+
+.menu__link:hover{
+  color: #F63;
 }
 
 .country__item:not(:last-child){
@@ -360,6 +372,12 @@
 
 /* -----MAIN-NAVIGATION-------------------------------- */
 
+/* .main__main-navigation{
+  position: sticky;
+  top: 0;
+  z-index: 20;
+} */
+
 .main-navigation__body{
   max-width: 816px;
   max-height: 82px;
@@ -392,8 +410,21 @@
   margin-bottom: 5px;
 }
 
+.navigation__item .navigation__icon .item-path{
+  transition: .3s;
+}
+
+.navigation__item:hover .navigation__icon .item-path{
+  fill:#F63;
+}
+
 .navigation__text {
   line-height: 150%;
+  transition: .3s;
+}
+
+.navigation__item:hover {
+  color: #F63;
 }
 
 @media (max-width:500px) {
@@ -1050,7 +1081,7 @@
   width: 100%;
 }
 
-/* -----MAIN-???-------------------------------- */
+/* -----MAIN-APP-------------------------------- */
 
 .main__main-app {}
 
@@ -1060,6 +1091,8 @@
 
 .main-app__body {
   display: flex;
+  display: -webkit-flex;
+  -webkit-justify-content: space-between;
   justify-content: space-between;
   background-color: #fff;
   border-radius: 12px;
@@ -1075,6 +1108,8 @@
 @media(max-width: 768px) {
   .main-app__body {
     flex-direction: column;
+    -webkit-flex-direction: column;
+    -webkit-box-direction: normal;
     background-color: transparent;
     padding: 0px 0px 0px 0px;
   }
@@ -1127,6 +1162,7 @@
 
 .main-app__image{
   align-self: flex-end;
+  -webkit-align-self: flex-end;
   margin-left: 15px;
   max-width: 500px;
 }
@@ -1225,8 +1261,10 @@
     height: auto;
     max-width: 300px;
     align-self: center;
+    -webkit-align-self: center;
     margin-bottom: -64px;
     order: 1;
+    -webkit-order: 1;
   }
 
   .main-image__image {
@@ -1239,11 +1277,13 @@
   .main-app__banner {
     position: relative;
     order: 2;
+    -webkit-order: 2;
     background-color: #fff;
     border-radius: 12px;
     padding: 20px 10px 20px 15px;
     margin: 0;
     max-width: 100%;
+    z-index: 10;
   }
   .main-banner__title {
     font-size: 30px;
