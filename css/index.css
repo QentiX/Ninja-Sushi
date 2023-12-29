@@ -156,6 +156,10 @@
   margin-right: 12px;
 }
 
+.buttons__link:hover {
+  cursor: pointer;
+}
+
 /* исправить жесткость кнопок */
 .buttons__link{
   height: 56px;
@@ -821,7 +825,7 @@
 }
 
 .main-card__container{
-    flex: 1 1 auto;
+  flex: 1 1 auto;
 }
 
 .main-card__link{
@@ -905,9 +909,15 @@
   line-height: 80%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1240px) {
   .main-card__price {
     font-size: 35px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .main-card__price {
+    font-size: 34px;
   }
 }
 
