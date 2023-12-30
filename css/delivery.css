@@ -1,0 +1,262 @@
+/* -----MAIN---------------------------------- */
+
+/* -----MAIN-POSTER------------------------------- */
+
+.main__main-poster {}
+
+.main-poster__container {
+}
+
+.main-poster__body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 124px;
+}
+
+.main-poster__image img{
+  width: 200px;
+  height: 200px;
+  margin-right: 60px;
+}
+
+.main-poster__info {}
+
+.main-info {}
+
+.main-info__title {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.33;
+}
+
+.main-info__points {}
+
+.main-info__list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.main-info__item {
+  display: flex;
+}
+
+.main-info__item img{
+  height: 64px;
+  width: 64px;
+}
+
+.main-info__text {
+  font-size: 18px;
+  margin-left: 12px;
+  line-height: 1.33;
+  word-wrap: break-word;
+}
+
+/* -----MAIN-MAP--------------------------------- */
+
+.main-map-delivery__container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.main-map-delivery__body{
+  /* background-color: #fff; */
+  border-radius: 12px;
+  margin-bottom: 124px;
+}
+
+@media (max-width: 425px) {
+  .main-map-delivery__body {
+    margin-bottom: 80px;
+  }
+}
+
+/* -----MAIN-INSTRUCTIONS---------------------------- */
+
+.main__main-instructions {}
+
+.main-instructions__container {
+}
+
+.main-instructions__make-order,
+.main-instructions__make-payment,
+.main-instructions__get-payment,
+.main-instructions__additional-options{
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  margin-bottom: 124px;
+}
+
+.make-order {}
+
+.make-order__title {
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 105%;
+  margin-bottom: 16px;
+}
+
+.make-order__text {
+  font-weight: 400;
+  line-height: 150%;
+  margin-bottom: 40px;
+  color: #686870;
+  text-align: center;
+  max-width: 770px;
+  word-wrap: break-word;
+}
+
+.main-instructions__cards-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.main-instructions__card {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 60px 24px;
+  align-items:center;
+  border-radius: 12px;
+  width: 335px;
+}
+
+.instructions-card {}
+
+.instructions-card__image {
+  margin-bottom: 12px;
+}
+
+.instructions-card__image img{
+  width: 55px;
+  height: 55px;
+}
+
+.instructions-card__title {
+  font-size: 20px;
+  line-height: 140%;
+  margin-bottom: 4px;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+
+.instructions-card__text {
+  line-height: 24px;
+  color: #686870;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.instructions-card__title p,
+.instructions-card__text p{
+  margin: 0;
+}
+
+.instructions-text {
+}
+
+.instructions-text__list {
+  list-style: none;
+  padding: 0;
+}
+
+.instructions-text__item:not(:last-child){
+  margin-bottom: 10px;
+}
+
+.instructions-text__link {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+@media (max-width: 1065px) {
+  .main-instructions__cards-container {
+    justify-content: center;
+  }
+  .make-order__text {
+    max-width: 556px;
+  }
+}
+
+@media (max-width: 768px) {
+  .instructions-card__image img{
+    width: 50px;
+    height: 50px;
+  }
+  .make-order__title {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 710px) {
+  .main-instructions__card {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+  .main-instructions__make-order,
+  .main-instructions__make-payment,
+  .main-instructions__get-payment,
+  .main-instructions__additional-options {
+    align-items: flex-start;
+  } 
+  .make-order__text {
+    text-align: left;
+  }
+  .instructions-card__image {
+    margin: 0;
+  }
+  .instructions-card__image img {
+    width: 45px;
+    height: 45px;
+    margin: 0;
+  }
+  .instructions-card__title {
+    text-align: left;
+  }
+  .instructions-card__text {
+    text-align: left;
+  }
+  .cont{
+    margin-left: 25px;
+    width: 350px;
+  }
+}
+
+@media (max-width: 500px) {
+  .cont {
+    width: 100%;
+  }
+}
+
+@media (max-width: 430px) {
+  .instructions-card__title {
+    font-size: 18px;
+  }
+  .instructions-card__text {
+    font-size: 15px;
+  }
+  .main-instructions__make-order,
+  .main-instructions__make-payment,
+  .main-instructions__get-payment,
+  .main-instructions__additional-options {
+    margin-bottom: 80px;
+  }
+}
+
+@media (max-width: 380px) {
+  .make-order__title {
+    font-size: 32px;
+  }
+}
