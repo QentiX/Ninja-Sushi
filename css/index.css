@@ -26,7 +26,7 @@
   }
 }
 
-@media (max-width:1300px) {
+@media (max-width:1305px) {
   .menu__list,
   .buttons__list{
     padding-left: 20px;
@@ -48,7 +48,7 @@
   display: inline-block;
 }
 
-@media (max-width:1240px) {
+@media (max-width:1280px) {
   .phone-link{
     display: none;
   }
@@ -100,7 +100,7 @@
   margin-right: 48px;
 }
 
-@media (max-width:1093px) {
+@media (max-width:1170px) {
   .menu__item:not(:last-child) {
     margin-right: 28px;
   }
@@ -186,7 +186,7 @@
   justify-content: space-around;
 }
 
-@media (max-width:1030px) {
+@media (max-width:1090px) {
   .buttons__text{
     display: none;
   }
@@ -196,7 +196,7 @@
   }
 }
 
-@media (max-width:940px) {
+@media (max-width:980px) {
   .shopping-cart{
     display: none;
   }
