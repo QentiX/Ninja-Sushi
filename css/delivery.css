@@ -1,3 +1,9 @@
+/* ---HEADER-------------------------------------- */
+
+.delivery-body{
+  margin-bottom: 100px;
+}
+
 /* -----MAIN---------------------------------- */
 
 /* -----MAIN-POSTER------------------------------- */
@@ -14,6 +20,12 @@
   margin-bottom: 124px;
 }
 
+@media (max-width: 768px) {
+  .main-poster__body {
+    flex-direction: column;
+  }
+}
+
 .main-poster__image img{
   width: 200px;
   height: 200px;
@@ -21,6 +33,20 @@
 }
 
 .main-poster__info {}
+
+@media (max-width: 768px) {
+  .main-poster__image {
+    order: 2;
+  }
+  
+  .main-poster__image img {
+    margin-right: 0px;
+  }
+
+  .main-poster__info {
+    order: 1;
+  }
+}
 
 .main-info {}
 
@@ -36,10 +62,20 @@
   display: flex;
   list-style: none;
   padding: 0;
+  justify-content: space-between;
 }
+
+/* .harakiri-list{
+  flex-wrap: wrap;
+} */
 
 .main-info__item {
   display: flex;
+}
+
+.main-info__item:nth-child(2),
+.main-info__item:nth-child(3){
+  margin-left: 15px;
 }
 
 .main-info__item img{
@@ -52,8 +88,60 @@
   margin-left: 12px;
   line-height: 1.33;
   word-wrap: break-word;
+  max-width: 200px;
 }
 
+.main-info__harakiri-text{
+  margin-top: 20px;
+  line-height: 1.33;
+  color: #686870;
+  max-width: 600px;
+  word-wrap: break-word;
+}
+
+@media (max-width: 1024px) {
+  .main-info__text {
+    font-size: 16px;
+  }
+  .main-info__item:nth-child(3) {
+    margin-left: 0px;
+  }
+  .harakiri-list{
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 504px) {
+  .main-info__list .second-item {
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 430px) {
+  .main-info__list {
+    flex-direction: column;
+    align-items:left;
+  }
+  .main-info__item:nth-child(2),
+  .main-info__item:nth-child(3) {
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+  .main-info__item img {
+    height: 60px;
+    width: 60px;
+  }
+  .main-poster__image img {
+    width: 180px;
+    height: 180px;
+  }
+  .main-info__text {
+    width: 100%;
+  }
+  .main-poster__body {
+    margin-bottom: 80px;
+  }
+}
 /* -----MAIN-MAP--------------------------------- */
 
 .main-map-delivery__container{
@@ -238,6 +326,9 @@
   .cont {
     width: 100%;
   }
+  .make-order__title {
+    font-size: 32px;
+  }
 }
 
 @media (max-width: 430px) {
@@ -252,6 +343,9 @@
   .main-instructions__get-payment,
   .main-instructions__additional-options {
     margin-bottom: 80px;
+  }
+  .make-order__title {
+    font-size: 29px;
   }
 }
 
