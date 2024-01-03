@@ -254,6 +254,7 @@
 .instructions-text__list {
   list-style: none;
   padding: 0;
+  margin-bottom: 0;
 }
 
 .instructions-text__item:not(:last-child){

@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__container _continer">
+        <div class="header__body">
+          <div class="header__logo-container logo">
+            <a href="#" class="logo__link">
+              <ul class="logo__list">
+                <li class="logo__item item-image">
+                  <img src="images/header/logo/logo-mob.svg" alt="">
+                </li>
+                <li class="logo__item item-text">
+                  <img src="images/header/logo/logo-text.svg" alt="">
+                </li>
+              </ul>
+            </a>
+          </div>
+          <!-- /.header__logo-container -->
+          <div class="header__country country">
+            <ul class="country__list">
+              <li class="country__item item-flag">
+                <img src="images/header/country.svg" alt="country">
+                <span class="country__link link-text">Украина</span>
+              </li>
+              <li class="country__item">
+                <button class="country__link country-button">RU</button>
+              </li>
+            </ul>
+            <!-- /.menu__list -->
+          </div>
+          <!-- /.header__country -->
+          <nav class="header__menu menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="index.html" class="menu__link">Главная</a>
+              </li>
+              <li class="menu__item">
+                <a href="ninja_delivery.html" class="menu__link">Доставка</a>
+              </li>
+              <li class="menu__item">
+                <a href="ninja_clients.html" class="menu__link">Клиентам</a>
+              </li>
+              <li class="menu__item">
+                <a href="ninja_news_page.html" class="menu__link">Новости</a>
+              </li>
+            </ul>
+            <!-- /.menu__list -->
+          </nav>
+          <!-- /.header__menu -->
+          <div class="block">
+            <div class="block__phone phone">
+              <a href="tel:+38 097 699 34 38" class="phone__image">
+                <img src="images/header/phone.svg" alt="phone svg">
+              </a>
+              <a href="tel:+38 097 699 34 38" class="menu__link phone-link">+38 097 699 34 38</a>
+            </div>
+          </div>
+          <!-- /.block-->
+          <div class="header__buttons buttons">
+            <ul class="buttons__list">
+              <li class="buttons__item">
+                <button class="buttons__link small-buttons">
+                  <img src="images/header/bell.svg" alt="bell">
+                </button>
+              </li>
+              <li class="buttons__item liked-item">
+                <button class="buttons__link small-buttons">
+                  <img src="images/header/liked.svg" alt="liked goods">
+                </button>
+              </li>
+              <li class="buttons__item profile">
+                <button class="buttons__link small-buttons">
+                  <img src="images/header/profile.svg" alt="user profile">
+                </button>
+              <li class="buttons__item shopping-cart">
+                <button class="buttons__link buttons__link_large">
+                  <span class="buttons__text">Корзина</span>
+                  <img src="images/header/shopping-cart.svg" alt="shopping cart">
+                </button>
+              </li>
+              <li class="buttons__item">
+                <button class="header__burger burger">
+                  <span class="burger__line"></span>
+                  <span class="burger__line"></span>
+                  <span class="burger__line"></span>
+                </button>
+              </li>
+            </ul>
+            <!-- /.menu__list -->
+          </div>
+          <!-- /.header__buttons -->
+        </div>
+        <!-- /.header-body -->
+      </div>
+      <!-- /.header__container -->
+    </header>
+    <!-- /.header -->
+
+    <main class="main">
+
+      <div class="main__main-navigation main-navigation">
+        <div class="main-navigation__container _continer">
+          <div class="main-navigation__body category-navigation-body">
+            <nav class="main-navigation__navigation navigation">
+              <ul class="navigation__list">
+                <li class="navigation__item  first-item">
+                  <a href="ninja_category.html" class="navigation__link">
+                    <!-- <img src="images/main-main/navigation/Sushi.svg" alt="Rolls" class="navigation__icon"> -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="navigation__icon">
+                      <g fill="none">
+                        <path stroke="#484848" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M3.5 14l1.222 3.97a5 5 0 0 0 3.308 3.308l8.419 2.59a5 5 0 0 0 3.922-.42L26.5 20" />
+                        <path fill="#86868B"
+                          d="M28.57 21.528C26.776 19.473 19.43 17.186 13.5 16 6 14.5-1.5 16 2 10.5c3.364-5.287 23.638-6.602 27.584 9.935.321 1.347-.625 1.538-1.014 1.093z"
+                          class="item-path" />
+                        <path stroke="#484848" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M15 7C9.945 8.264 6.684 18.82 9.5 21.5m5 1.5C12.134 17.664 17.017 9.72 21 9" />
+                      </g>
+                    </svg>
+                    <span class="navigation__text">Суши</span>
+                  </a>
+                </li>
+                <li class="navigation__item">
+                  <a href="ninja_category.html" class="navigation__link">
+                    <!-- <img src="images/main-main/navigation/test.svg" alt="" class="navigation__icon"> -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="navigation__icon">
+                      <g fill="none" transform="translate(6 4)">
+                        <ellipse cx="10" cy="6" stroke="#484848" stroke-width="2" rx="10" ry="6" />
+                        <ellipse cx="10" cy="6" fill="#86868B" rx="6" ry="3" class="item-path" />
+                        <path stroke="#484848" stroke-width="2" d="M0 6v12c0 3.314 4.477 6 10 6s10-2.686 10-6V6" />
+                      </g>
+                    </svg>
+                    <span class="navigation__text">Роллы</span>
+                  </a>
+                </li>
+                <li class="navigation__item">
+                  <a href="ninja_category.html" class="navigation__link">
+                    <!-- <img src="images/main-main/navigation/test2.svg" alt="Sets" class="navigation__icon"> -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="navigation__icon">
+                      <g fill="none">
+                        <g transform="translate(14 2)">
+                          <ellipse cx="8.5" cy="5" stroke="#484848" stroke-width="2" rx="8.5" ry="5" />
+                          <ellipse cx="8.5" cy="5" fill="#86868B" rx="4.5" ry="2" class="item-path" />
+                          <path stroke="#484848" stroke-width="2" d="M0 5v10c0 2.761 3.806 5 8.5 5s8.5-2.239 8.5-5V5" />
+                        </g>
+                        <path stroke="#484848" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M2.5 20l1.222 3.97a5 5 0 0 0 3.308 3.308l8.419 2.59a5 5 0 0 0 3.922-.42L25.5 26" />
+                        <path fill="#86868B"
+                          d="M27.57 27.528C25.776 25.473 18.43 23.186 12.5 22 5 20.5-2.5 22 1 16.5c3.364-5.287 23.638-6.602 27.584 9.935.321 1.347-.625 1.538-1.014 1.093z"
+                          class="item-path" />
+                        <path stroke="#484848" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M14 13c-5.055 1.264-8.316 11.82-5.5 14.5m5 1.5c-2.366-5.336 2.517-13.28 6.5-14" />
+                      </g>
+                    </svg>
+                    <span class="navigation__text">Сеты</span>
+                  </a>
+                </li>
+                <li class="navigation__item">
+                  <a href="ninja_category.html" class="navigation__link">
+                    <!-- <img src="images/main-main/navigation/Boyls.svg" alt="Boyls" class="navigation__icon"> -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="navigation__icon">
+                      <g fill="none">
+                        <path fill="#86868B" d="M12 11.5a3.5 3.5 0 0 0-7 0m22 0a3.5 3.5 0 0 0-7 0" class="item-path" />
+                        <path stroke="#484848" stroke-width="2"
+                          d="M21.909 11.953a6.002 6.002 0 0 0-11.849.193m19.96 7.828a5 5 0 0 0-6.279-7.436m-15.277.11a5 5 0 0 0-6.43 7.396" />
+                        <path stroke="#484848" stroke-width="2"
+                          d="M15 11h2c7.732 0 14 6.268 14 14H1c0-7.732 6.268-14 14-14z" />
+                        <circle cx="13" cy="16" r="1" fill="#86868B" class="item-path" />
+                        <circle cx="17" cy="20" r="1" fill="#86868B" class="item-path" />
+                        <circle cx="24" cy="19" r="1" fill="#86868B" class="item-path" />
+                        <circle cx="7" cy="21" r="1" fill="#86868B" class="item-path" />
+                      </g>
+                    </svg>
+                    <span class="navigation__text">Закуски</span>
+                  </a>
+                </li>
+                <li class="navigation__item">
+                  <a href="ninja_category.html" class="navigation__link">
+                    <!-- <img src="images/main-main/navigation/Drinks.svg" alt="Drinks" class="navigation__icon"> -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="navigation__icon">
+                      <g fill="none">
+                        <path stroke="#484848" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M9 11h14l-2 18H11zM7 6h18v5H7z" />
+                        <circle cx="16" cy="19" r="5.5" fill="#86868B" class="item-path" />
+                        <path stroke="#484848" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M15 6l-2-4-4-1" />
+                      </g>
+                    </svg>
+                    <span class="navigation__text">Напитки</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <!-- /.main__navigation -->
+          </div>
+          <!-- /.main__body -->
+        </div>
+        <!-- /.main__container -->
+      </div>
+      <!-- /.main__main-navigation -->
+
+      <section class="main__main-food main-food">
+        <div class="main-food__container _continer">
+          <div class="main-food__body">
+            <div class="main-food__image">
+              <img src="images/food_page/food1.png" alt="кратос">
+            </div>
+            <div class="main-food__info">
+              <h1 class="main-food__name">Кратос</h1>
+              <div class="main-food__weight">40 г</div>
+              <div class="main-food__consist">
+                <span class="small__text">Состоит из:</span>
+                <div class="main-food__ingridients">
+                  <article class="food__card">
+                    <div class="food__image">
+                      <img src="images/food_page/cons1.png" alt="Нори">
+                    </div>
+                    <div class="food__name">Нори</div>
+                  </article>
+                  <article class="food__card">
+                    <div class="food__image">
+                      <img src="images/food_page/cons6.png" alt="Нори">
+                    </div>
+                    <div class="food__name">Рис</div>
+                  </article>
+                  <article class="food__card">
+                    <div class="food__image">
+                      <img src="images/food_page/cons3.png" alt="Нори">
+                    </div>
+                    <div class="food__name">Рис</div>
+                  </article>
+                  <article class="food__card">
+                    <div class="food__image">
+                      <img src="images/food_page/cons4.png" alt="Нори">
+                    </div>
+                    <div class="food__name">Рис</div>
+                  </article>
+                </div>
+                <!-- <div class="swiper mySwiper2">
+                  <div class="swiper-wrapper mySwiper2-wrapper">
+                    <div class="swiper-slide mySlide2">
+                      <article class="food__card">
+                        <div class="food__image">
+                          <img src="images/food_page/cons1.png" alt="Нори">
+                        </div>
+                        <div class="food__name">Нори</div>
+                      </article>
+                    </div>
+                    <div class="swiper-slide mySlide2">
+                      <article class="food__card">
+                        <div class="food__image">
+                          <img src="images/food_page/cons1.png" alt="Нори">
+                        </div>
+                        <div class="food__name">Нори</div>
+                      </article>
+                    </div>
+                    <div class="swiper-slide mySlide2">
+                      <article class="food__card">
+                        <div class="food__image">
+                          <img src="images/food_page/cons1.png" alt="Нори">
+                        </div>
+                        <div class="food__name">Нори</div>
+                      </article>
+                    </div>
+                    <div class="swiper-slide mySlide2">
+                      <article class="food__card">
+                        <div class="food__image">
+                          <img src="images/food_page/cons1.png" alt="Нори">
+                        </div>
+                        <div class="food__name">Нори</div>
+                      </article>
+                    </div>
+                  </div>
+                </div> -->
+              </div>
+              <div class="main-food__total">
+                <div class="main-food__price">190 <span class="price__currency">грн</span>
+                </div>
+                <div class="total_buttons-container">
+                  <button class="main-food__button">
+                    В корзину
+                  </button>
+                  <button class="main-card__like main-food__like">
+                    <img src="images/main-main/main-sushi/icons/like-sushi.svg" alt="">
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /.main-food__body -->
+        </div>
+        <!-- /.main-food__container -->
+      </section>
+      <!-- /.main__main-food -->
+
+      <section class="main__main-slider topic-slider">
+        <div class="topic-slider__container _continer">
+          <div class="topic-slider__title-cont">
+            <h2 class="topic-slider__title food-slider__title">Может, еще кое-что?</h2>
+          </div>
+          <div class="swiper mySwiper2">
+            <div class="swiper-wrapper mySwiper-wrapper">
+              <div class="swiper-slide mySlide">
+                <article class="main-card">
+                  <div class="main-card__container">
+                    <div class="main-card__link">
+                      <a href="food.html" class="main-card__image image-card">
+                        <img class="image-card__image" src="images/main-main/main-rolls/philadelphia-with-salmon.png"
+                          alt="gunkan salmon">
+                      </a>
+                    </div>
+                    <h4 class="main-card__title">
+                      <a href="food.html" class="main-card__link-title">Филадельфия с лососем</a>
+                    </h4>
+                    <div class="main-card__info info-card">
+                      <div class="info-card__weight">Вес: 40 г</div>
+                      <div class="info-card__description">
+                        Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло
+                      </div>
+                    </div>
+                  </div>
+                  <div class="main-card__footer">
+                    <div class="main-card__price">190 <span class="price__currency">грн</span></div>
+                    <a href="#" class="main-card__like"><img src="images/main-main/main-sushi/icons/like-sushi.svg" alt=""></a>
+                    <button class="main-card__add"><img src="images/main-main/main-sushi/icons/add-to-cart.svg"></button>
+                  </div>
+                </article>
+              </div>
+              <div class="swiper-slide mySlide">
+                <article class="main-card">
+                  <div class="main-card__container">
+                    <div class="main-card__link">
+                      <a href="food.html" class="main-card__image image-card">
+                        <img class="image-card__image" src="images/main-main/main-rolls/philadelphia-the-eel.png" alt="gunkan shrimp">
+                      </a>
+                    </div>
+                    <h4 class="main-card__title">
+                      <a href="food.html" class="main-card__link-title">Филадельфия с угрем</a>
+                    </h4>
+                    <div class="main-card__info info-card">
+                      <div class="info-card__weight">Вес: 40 г</div>
+                      <div class="info-card__description">
+                        Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло
+                      </div>
+                    </div>
+                  </div>
+                  <div class="main-card__footer">
+                    <div class="main-card__price">190 <span class="price__currency">грн</span></div>
+                    <a href="#" class="main-card__like"><img src="images/main-main/main-sushi/icons/like-sushi.svg" alt=""></a>
+                    <button class="main-card__add"><img src="images/main-main/main-sushi/icons/add-to-cart.svg"></button>
+                  </div>
+                </article>
+              </div>
+              <div class="swiper-slide mySlide">
+                <article class="main-card">
+                  <div class="main-card__container">
+                    <div class="main-card__link">
+                      <a href="food.html" class="main-card__image image-card">
+                        <img class="image-card__image" src="images/main-main/main-rolls/cratos.png" alt="nigiri">
+                      </a>
+                    </div>
+                    <h4 class="main-card__title">
+                      <a href="food.html" class="main-card__link-title">Кратос</a>
+                    </h4>
+                    <div class="main-card__info info-card">
+                      <div class="info-card__weight">Вес: 40 г</div>
+                      <div class="info-card__description">
+                        Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло
+                      </div>
+                    </div>
+                  </div>
+                  <div class="main-card__footer">
+                    <div class="main-card__price">190 <span class="price__currency">грн</span></div>
+                    <a href="#" class="main-card__like"><img src="images/main-main/main-sushi/icons/like-sushi.svg" alt=""></a>
+                    <button class="main-card__add"><img src="images/main-main/main-sushi/icons/add-to-cart.svg"></button>
+                  </div>
+                </article>
+              </div>
+              <div class="swiper-slide mySlide">
+                <article class="main-card">
+                  <div class="main-card__container">
+                    <div class="main-card__link">
+                      <a href="food.html" class="main-card__image image-card">
+                        <img class="image-card__image" src="images/main-main/main-rolls/yamomoto.png" alt="gunkan salmon">
+                      </a>
+                    </div>
+                    <h4 class="main-card__title">
+                      <a href="food.html" class="main-card__link-title">Ямамото</a>
+                    </h4>
+                    <div class="main-card__info info-card">
+                      <div class="info-card__weight">Вес: 40 г</div>
+                      <div class="info-card__description">
+                        Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло
+                      </div>
+                    </div>
+                  </div>
+                  <div class="main-card__footer">
+                    <div class="main-card__price">190 <span class="price__currency">грн</span></div>
+                    <a href="#" class="main-card__like"><img src="images/main-main/main-sushi/icons/like-sushi.svg" alt=""></a>
+                    <button class="main-card__add"><img src="images/main-main/main-sushi/icons/add-to-cart.svg"></button>
+                  </div>
+                </article>
+              </div>
+              <div class="swiper-slide mySlide">
+                <article class="main-card">
+                  <div class="main-card__container">
+                    <div class="main-card__link">
+                      <a href="food.html" class="main-card__image image-card">
+                        <img class="image-card__image" src="images/main-main/main-rolls/baked-shrimp.png" alt="gunkan tuna">
+                      </a>
+                    </div>
+                    <h4 class="main-card__title">
+                      <a href="food.html" class="main-card__link-title">Запеченная креветка</a>
+                    </h4>
+                    <div class="main-card__info info-card">
+                      <div class="info-card__weight">Вес: 40 г</div>
+                      <div class="info-card__description">
+                        Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло
+                      </div>
+                    </div>
+                  </div>
+                  <div class="main-card__footer">
+                    <div class="main-card__price">190 <span class="price__currency">грн</span></div>
+                    <a href="#" class="main-card__like"><img src="images/main-main/main-sushi/icons/like-sushi.svg" alt=""></a>
+                    <button class="main-card__add"><img src="images/main-main/main-sushi/icons/add-to-cart.svg"></button>
+                  </div>
+                </article>
+              </div>
+              <div class="swiper-slide mySlide">
+                <article class="main-card">
+                  <div class="main-card__container">
+                    <div class="main-card__link">
+                      <a href="food.html" class="main-card__image image-card">
+                        <img class="image-card__image" src="images/main-main/main-rolls/cheese-with-salmon.png" alt="gunkan salmon">
+                      </a>
+                    </div>
+                    <h4 class="main-card__title">
+                      <a href="food.html" class="main-card__link-title">Сырный с лососем</a>
+                    </h4>
+                    <div class="main-card__info info-card">
+                      <div class="info-card__weight">Вес: 40 г</div>
+                      <div class="info-card__description">
+                        Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло
+                      </div>
+                    </div>
+                  </div>
+                  <div class="main-card__footer">
+                    <div class="main-card__price">190 <span class="price__currency">грн</span></div>
+                    <a href="#" class="main-card__like"><img src="images/main-main/main-sushi/icons/like-sushi.svg" alt=""></a>
+                    <button class="main-card__add"><img src="images/main-main/main-sushi/icons/add-to-cart.svg"></button>
+                  </div>
+                </article>
+              </div>
+              <div class="swiper-slide mySlide">
+                <article class="main-card">
+                  <div class="main-card__container">
+                    <div class="main-card__link">
+                      <a href="food.html" class="main-card__image image-card">
+                        <img class="image-card__image" src="images/main-main/main-rolls/mikasa.png" alt="gunkan salmon">
+                      </a>
+                    </div>
+                    <h4 class="main-card__title">
+                      <a href="food.html" class="main-card__link-title">Микаса</a>
+                    </h4>
+                    <div class="main-card__info info-card">
+                      <div class="info-card__weight">Вес: 40 г</div>
+                      <div class="info-card__description">
+                        Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло
+                      </div>
+                    </div>
+                  </div>
+                  <div class="main-card__footer">
+                    <div class="main-card__price">190 <span class="price__currency">грн</span></div>
+                    <a href="#" class="main-card__like"><img src="images/main-main/main-sushi/icons/like-sushi.svg" alt=""></a>
+                    <button class="main-card__add"><img src="images/main-main/main-sushi/icons/add-to-cart.svg"></button>
+                  </div>
+                </article>
+              </div>
+              <div class="swiper-slide mySlide">
+                <article class="main-card">
+                  <div class="main-card__container">
+                    <div class="main-card__link">
+                      <a href="food.html" class="main-card__image image-card">
+                        <img class="image-card__image" src="images/main-main/main-rolls/combo-philadelphia.png" alt="gunkan salmon">
+                      </a>
+                    </div>
+                    <h4 class="main-card__title">
+                      <a href="food.html" class="main-card__link-title">Комбо Филадельфия</a>
+                    </h4>
+                    <div class="main-card__info info-card">
+                      <div class="info-card__weight">Вес: 40 г</div>
+                      <div class="info-card__description">
+                        Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло
+                      </div>
+                    </div>
+                  </div>
+                  <div class="main-card__footer">
+                    <div class="main-card__price">190 <span class="price__currency">грн</span></div>
+                    <a href="#" class="main-card__like"><img src="images/main-main/main-sushi/icons/like-sushi.svg" alt=""></a>
+                    <button class="main-card__add"><img src="images/main-main/main-sushi/icons/add-to-cart.svg"></button>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <!-- <div class="swiper-button-next gray-button-next"></div>
+            <div class="swiper-button-prev gray-button-prev"></div>
+            <div class="swiper-pagination number-pagination"></div> -->
+          </div>
+          <div class="swiper-pagination number-pagination"></div>
+        </div>
+      </section>
+      <!-- /.main__main-slider -->
+
+    </main>
+    <!-- /.main -->
+
+    <footer class="footer">
+      <div class="footer__container _continer">
+        <div class="footer__ninja-app ninja-app">
+          <ul class="ninja-app__list">
+            <li class="ninja-app__item">
+              <a href="#" class="ninja-app__link ninja-image">
+                <img src="images/header/logo/logo-desk.svg" alt="logo">
+              </a>
+            </li>
+            <li class="ninja-app__item item">
+              <div class="item__links">
+                <a href="https://apps.apple.com/ru/app/ninja-sushi/id1437544985" target="_blank"
+                  class="ninja-app__link link-btn">
+                  <img class="link-btn__image" src="images/footer/apple_icon.svg" alt="apple">
+                  <span class="link-btn__text">App Store</span>
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=com.ninjasushi.ninjasushi&hl=en_US" tar get="_blank"
+                  class="ninja-app__link link-btn">
+                  <img class="link-btn__image" src="images/footer/google_play_icon.svg" alt="apple">
+                  <span class="link-btn__text">Google Play</span>
+                </a>
+              </div>
+              <!-- /.item__links -->
+            </li>
+            <li class="ninja-app__item">
+              <a href="#" class="ninja-app__link ninja-app__link_gray">
+                © Ninja Sushi. All rights reserved.
+              </a>
+            </li>
+          </ul>
+          <a href="#" class="ninja-app__conf">
+            Политика конфиденциальности
+          </a>
+        </div>
+        <!-- /.footer__ninja-app -->
+        <div class="footer__main-info main-info">
+          <div class="main-info__body">
+            <nav class="main-info__navigation navigate">
+              <ul class="navigate__list">
+                <li class="navigate__item heading">
+                  <span class="heading__text">Навигация:</span>
+                </li>
+                <li class="navigate__item">
+                  <a href="index.html" class="navigate__link">Главная</a>
+                </li>
+                <li class="navigate__item">
+                  <a href="#" class="navigate__link">Меню</a>
+                </li>
+                <li class="navigate__item">
+                  <a href="ninja_delivery.html" class="navigate__link">Доставка</a>
+                </li>
+                <li class="navigate__item">
+                  <a href="ninja_news_page.html" class="navigate__link">Новости</a>
+                </li>
+              </ul>
+            </nav>
+            <!-- /.main-info__navigation -->
+            <div class="main-info__contacts contacts">
+              <ul class="contacts__list">
+                <li class="contacts__item heading">
+                  <span class="heading__text">Оформить заказ:</span>
+                </li>
+                <li class="contacts__item">
+                  <a href="index.html" class="contacts__link">Главная</a>
+                </li>
+                <li class="contacts__item">
+                  <a href="#" class="contacts__link">Меню</a>
+                </li>
+                <li class="contacts__item">
+                  <a href="ninja_delivery.html" class="contacts__link">Доставка</a>
+                </li>
+              </ul>
+            </div>
+            <!-- /.main-info__contacts -->
+            <div class="main-info__work-time work-time">
+              <ul class="work-time__list">
+                <li class="work-time__item heading">
+                  <span class="heading__text">Время работы:</span>
+                </li>
+                <li class="work-time__item">
+                  <a href="#" class="work-time__link">с 11:00 до 22:45</a>
+                </li>
+                <li class="work-time__item">
+                  <a href="#" class="work-time__link">с 22.45 до 06.00</a>
+                </li>
+                <li class="work-time__item">
+                  <a href="#" class="work-time__link work-time__link_gray">Ночная доставка</a>
+                </li>
+              </ul>
+            </div>
+            <!-- /.main-info__work-time -->
+            <div class="main-info__socials socials">
+              <ul class="socials__list">
+                <li class="socials__item heading">
+                  <span class="heading__text">Мы в соц. сетях:</span>
+                </li>
+                <li class="socials__item">
+                  <a href="https://www.facebook.com/ninjafamilyofficial/" target="_blank" class="socials__link">
+                    <img src="images/footer/facebook_icon.svg" alt="">
+                  </a>
+                  <a href="https://www.instagram.com/ninjasushiofficial/" target="_blank" class="socials__link">
+                    <img src="images/footer/instagram_icon.svg" alt="">
+                  </a>
+                </li>
+                <li class="socials__item item">
+                  <a href="https://t.me/ninjasushi" target="_blank" class="socials__link socials__link_gray">
+                    <img src="images/footer/telegram_icon.svg" alt="">
+                    <span class="socials__link_gray-text">Техподдержка</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-- /.main-info__socials -->
+          </div>
+          <!-- /.main-info__body -->
+        </div>
+        <!-- /.footer__main-info -->
+        <div class="footer__additional-info additional-info">
+          <ul class="additional-info__list">
+            <li class="additional-info__item">
+              <a href="https://www.instagram.com/ninjasushiofficial/" terget="_blank"
+                class="additional-info__link additional-info__link_large">
+                #NinjaSushi
+              </a>
+            </li>
+            <li class="additional-info__item">
+              <a href="#" class="additional-info__link additional-info__link_gray">
+                Ninja Sushi в фотографиях<br>наших клиентов
+              </a>
+            </li>
+            <li class="additional-info__item">
+              <a href="https://www.instagram.com/ninjasushiofficial/" target="_blank"
+                class="additional-info__link additional-info__link_green">
+                Перейти в instagram
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- /.footer__additional-info -->
+      </div>
+      <!-- /.footer__container -->
+    </footer>
+    <!-- /.footer -->
+  </div>
+  <!-- /.wrapper -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

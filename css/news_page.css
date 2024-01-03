@@ -43,6 +43,18 @@
   }
 }
 
+@media (max-width: 375px) {
+  .main-news__title {
+    font-size: 38px;
+  }
+}
+
+@media (max-width: 320px) {
+  .main-news__title {
+    font-size: 36px;
+  }
+}
+
 .main-news__search {
   display: flex;
   justify-content: space-between;

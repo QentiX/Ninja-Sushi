@@ -1,0 +1,139 @@
+/* ---MAIN-------------------------- */
+
+/* ---MAIN-TOPIC------------------------- */
+
+.main-topic {}
+
+.main-topic__container {
+  margin-bottom: 80px;
+}
+
+.main-topic__body {
+  max-width: 1300px;
+  background-color: #fff;
+  border-radius: 24px;
+  padding: 50px 0px 20px 0px;
+  margin: 0 auto;
+}
+
+.main-topic__text-wrapper{
+  max-width: 1043px;
+  margin: 0 auto;
+  padding: 0 0 0 20px;
+}
+
+.main-topic__title {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 133%;
+  margin: 0 0 12px 0;
+}
+
+.topic-slider__title{
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 133%;
+  margin-bottom: 44px;
+}
+
+@media (max-width: 1024px) {
+  .main-topic__title,
+  .topic-slider__title {
+    font-size: 42px;
+  }
+}
+
+@media (max-width: 770px) {
+  .main-topic__title,
+  .topic-slider__title {
+    font-size: 38px;
+  }
+}
+
+@media (max-width: 430px) {
+  .main-topic__title,
+  .topic-slider__title {
+    font-size: 36px;
+  }
+  .main-topic__body {
+    padding: 35px 0px 20px 0px;
+  }
+}
+
+@media (max-width: 380px) {
+  .main-topic__title,
+  .topic-slider__title {
+    font-size: 32px;
+  }
+}
+
+.topic-category {
+
+  justify-content: left;
+  margin-bottom: 32px;
+}
+
+.topic-category-link{
+  margin-right: 16px;
+  padding: 8px 14px;
+  font-size: 16px;
+}
+
+.main-topic__image img{
+  width: 100%;
+  border-radius: 24px;
+  margin-bottom: 32px;
+}
+
+.main-topic__text {
+  color: #686870;
+  line-height: 140%;
+}
+
+/* ---MAIN-SLIDER------------------------- */
+
+.topic-slider__container{
+  margin-bottom: 124px;
+}
+
+.topic-slider__title-cont{
+}
+
+.number-pagination{
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 30px;
+  position: relative;
+  background-color: #fff;
+  width: 80px;
+  border-radius: 12px;
+  padding: 5px 0px;
+}
+
+.number-pagination .swiper-pagination-current{
+  margin-right: 2px;
+}
+
+.number-pagination .swiper-pagination-total{
+  margin-left: 2px;
+}
+
+.mySwiper {
+  width: 100%;
+  height: 100%;
+}
+
+.mySwiper-wrapper{
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.mySlide {
+  display: grid;
+  height: auto;
+}
+
+.mySlide img {
+}
